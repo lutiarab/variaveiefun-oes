@@ -1,32 +1,10 @@
-document.getElementById('n1', 'n2', 'resultado').innerText = `+: ${somar} , -: ${subtrair} , *: ${multiplicar}, /: ${dividir}, resultado: ${resp}`;
-
-
-let numero = ['numero1', 'numero2', 'resp'];
+var numero1 = document.getSelection('n1')
+var numero2 = document.getSelection('n2')
+var resultado = document.getSelection('resp')
 
 function somar(){
-let n1 = Number(numeo1.value)
-let n2 = Number(numero2.value)
-let resultado = resp(n1 + n2)
- 
-};
-
-function subitrair(){
-let n1 = Number(numeo1.value)
-let n2 = Number(numero2.value)
-let resultado = resp(n1 - n2)
-    
-};
-
-function multiplicar(){
-let n1 = Number(numeo1.value)
-let n2 = Number(numero2.value)
-let resultado = resp(n1 * n2)  
-};
-
-function dividir(){
-let n1 = Number(numeo1.value)
-let n2 = Number(numero2.value)
-let resultado =  resp(n1 / n2)   
-};
-
-function resp(resultado): `A resposta é: ${resultado} `
+    var n1 = Number(numero1.value)
+    var n2 = Number(numero2.value)
+    var resp = n1 + n2 
+    resultado.innerHTML = soma 
+}

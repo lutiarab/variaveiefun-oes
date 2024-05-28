@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variáveis em JavaScript</title>
+    <title>Calculadora Simples</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,12 +13,12 @@
         <input type="number" id="numero2" placeholder="Número2">
 
         <div class="operacoes">
-            <button onclick="calcular('+')">+</button>
-            <button onclick="calcular('-')">-</button>
-            <button onclick="calcular('*')">*</button>
-            <button onclick="calcular('/')">/</button>
+            <button onclick = "somar()">+</button>
+            <button onclick = "subtrair()">-</button>
+            <button onclick="multiplicar()">*</button>
+            <button onclick="dividir()">/</button>
         </div>
-        <p id="resultado"></p>
+        <p id="resultado">Resultado:</p>
     </div>
     <script src="script.js"></script>
 </body>
